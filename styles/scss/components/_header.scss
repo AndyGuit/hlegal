@@ -1,0 +1,72 @@
+.header {
+  &__langs {
+    & li {
+      width: 33px;
+      height: 25px;
+      font-size: 12px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $grey-text;
+      }
+
+      &.active {
+        background-color: $accent;
+      }
+    }
+  }
+
+  &__social {
+    &:hover {
+      color: $accent !important;
+    }
+  }
+
+  &__controls {
+    & div {
+      position: relative;
+    }
+
+    & div:not(:last-child)::after {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      position: absolute;
+      right: -11px;
+      top: 34%;
+      background-color: $grey-separator;
+    }
+  }
+}
+
+.nav-list {
+  &__item {
+    & a {
+      &::after {
+        content: '';
+        display: block;
+        width: 0;
+        border-bottom: 3px solid #fff;
+        transition: width 0.2s ease-in-out;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+
+      &:active {
+        color: $accent !important;
+        &::after {
+          content: '';
+          display: block;
+          width: 100%;
+          border-bottom: 3px solid $accent;
+        }
+      }
+    }
+  }
+}
