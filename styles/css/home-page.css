@@ -11981,4 +11981,52 @@ a {
   border-bottom: 3px solid #f0145a;
 }
 
+.hero {
+  height: calc(100dvh - 159px);
+}
+.hero__heading {
+  margin-top: 19%;
+}
+.hero__img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (min-width: 1600px) {
+  .hero__img {
+    height: 1000px;
+  }
+}
+.hero__scroll {
+  width: 42px;
+  height: 42px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 21%;
+  background: transparent;
+  border: 2px solid;
+  border-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+@media (hover: hover) {
+  .hero__scroll:hover {
+    border-color: rgba(240, 20, 90, 0.5);
+  }
+  .hero__scroll:hover span {
+    border-color: #f0145a;
+  }
+}
+.hero__scroll span {
+  display: block;
+  width: 12px;
+  border: 2px solid;
+  border-color: white;
+  height: 12px;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg) translate(25%, -50%);
+}
+
 /*# sourceMappingURL=home-page.css.map */
