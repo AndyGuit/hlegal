@@ -1,4 +1,35 @@
 .header {
+  &__logo {
+    @media (min-width: 375px) {
+      position: absolute;
+      top: 105px;
+    }
+
+    @media (min-width: 1024px) {
+      position: unset;
+    }
+  }
+
+  .navbar {
+    @media (min-width: 768px) {
+      justify-content: flex-start !important;
+    }
+
+    @media (min-width: 1024px) {
+      justify-content: flex-end !important;
+    }
+  }
+
+  &__side {
+    @media (min-width: 375px) {
+      gap: 7.5em !important;
+    }
+
+    @media (min-width: 1024px) {
+      gap: 0.5em !important;
+    }
+  }
+
   &__langs {
     & li {
       width: 33px;
@@ -23,18 +54,38 @@
   }
 
   &__controls {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 768px;
+    width: 100%;
+    padding: 12.5px 15px;
+
+    @media (max-width: 767px) {
+      background-color: #f5f5fa33;
+    }
+
+    @media (min-width: 768px) {
+      position: unset;
+      padding: 0;
+    }
+
     & div {
       position: relative;
     }
 
     & div:not(:last-child)::after {
+      @media (min-width: 768px) {
+        display: block;
+      }
+
       content: '';
-      display: block;
+      display: none;
       width: 6px;
       height: 6px;
       border-radius: 50%;
       position: absolute;
-      right: -11px;
+      right: -14px;
       top: 34%;
       background-color: $grey-separator;
     }
@@ -42,6 +93,9 @@
 }
 
 .nav-list {
+  @media (max-width: 768px) {
+    justify-content: flex-start !important;
+  }
   &__item {
     & a {
       &::after {
