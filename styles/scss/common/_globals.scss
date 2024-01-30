@@ -5,7 +5,6 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: $gradient-supersoft;
 }
 
 ul {
@@ -16,34 +15,4 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-@media (min-width: 576px) {
-  .container {
-    padding: 0 15px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 648px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 904px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .container {
-    max-width: 1320px;
-  }
-}
-
-@media (min-width: 1600px) {
-  .container {
-    max-width: 1600px;
-  }
 }
