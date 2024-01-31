@@ -5,6 +5,8 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background: $gradient-supersoft;
+  height: 100vh;
 }
 
 ul {
@@ -15,4 +17,25 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media (min-width: 576px) {
+    max-width: 678px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 934px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 1350px;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 1630px;
+  }
 }

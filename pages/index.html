@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/css/home-page.css">
+  <link rel="stylesheet" href="../styles/css/home-page.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
@@ -17,5 +17,65 @@
   <title>HLegal | Law Company</title>
 </head>
 <body>
+  <div class="bg-gradient-supersoft">
+    <header class="header container text-white">
+      <div class="header__logo">
+        <img src="../assets/hlegal-logo.png" alt="hlegal logo">
+      </div>
+      <div class="header__nav">
+        <div
+          class="header__controls text-center d-flex justify-content-between justify-content-sm-start align-items-center">
+          <div class="header__languages fw-bold">
+            <ul class="d-flex">
+              <li class="header__lang">УК</li>
+              <li class="header__lang">РУ</li>
+              <li class="header__lang active">EN</li>
+            </ul>
+          </div>
+          <div class="header__address d-sm-block d-none">
+            <address class="m-0">Kyiv, Mechnikova str, 14/1</address>
+          </div>
+          <div class="header__phone">
+            <a class="text-white fw-bold" href="tel:0800 211 927">0800&nbsp;211&nbsp;927</a>
+          </div>
+          <div class="header__social d-sm-block d-none"><i class="fs-4 bi bi-facebook"></i></div>
+        </div>
+        <nav class="navbar mt-3 navbar-expand-sm">
+          <div class="container-fluid p-0 justify-content-end">
+            <button class="navbar-toggler fs-1 p-0 border-0 text-white" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <i class="bi bi-list"></i>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header justify-content-end">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body fw-bold">
+                <ul
+                  class="navbar-nav text-center justify-content-start justify-content-md-end mt-md-1 p-md-0 gap-2 gap-sm-3 flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">about us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">publications</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
 </body>
 </html>

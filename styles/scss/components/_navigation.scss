@@ -1,0 +1,41 @@
+.navbar {
+  @media (min-width: 576px) {
+    margin-top: 110px !important;
+  }
+
+  @media (min-width: 768px) {
+    margin-top: 0 !important;
+  }
+}
+
+.nav-item {
+  border-radius: 12px;
+  background-color: $grey-bg;
+
+  @media (min-width: 576px) {
+    background-color: transparent;
+
+    a {
+      color: white;
+    }
+  }
+}
+
+.nav-link {
+  color: $active-regular;
+
+  @media (hover: hover) {
+    &:hover {
+      color: $accent !important;
+    }
+  }
+
+  @media (min-width: 576px) {
+    padding: 0 !important;
+  }
+}
+
+.navbar-toggler {
+  margin-top: 37px;
+  margin-right: 3px;
+}
