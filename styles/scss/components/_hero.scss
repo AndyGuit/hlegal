@@ -1,0 +1,51 @@
+.hero {
+  position: relative;
+  &__img {
+    height: 600px;
+
+    & img {
+      position: absolute;
+      top: -89px;
+      left: -72px;
+      z-index: -1;
+      // // 42px is the size of scroll button
+      // height: calc(100% - 42px);
+      height: 100%;
+    }
+  }
+
+  &__heading {
+    font-size: 38px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -115%);
+  }
+
+  &__scroll {
+    position: absolute;
+    bottom: 16.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__scroll-btn {
+    width: 42px;
+    height: 42px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    background: transparent;
+
+    & span {
+      display: block;
+      margin: 0 auto;
+      margin-top: -4px;
+      width: 13px;
+      height: 13px;
+      border: 2px solid white;
+      border-top: none;
+      border-right: none;
+      transform: rotate(-45deg);
+    }
+  }
+}

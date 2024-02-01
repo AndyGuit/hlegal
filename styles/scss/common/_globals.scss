@@ -5,6 +5,8 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  position: relative;
+  z-index: -100;
 }
 
 ul {
@@ -19,6 +21,9 @@ a {
 
 .bg-gradient-supersoft {
   background: $gradient-supersoft;
+  position: relative;
+  z-index: -2;
+  overflow: hidden;
 }
 
 .container {
