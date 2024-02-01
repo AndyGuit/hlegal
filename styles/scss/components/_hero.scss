@@ -1,22 +1,23 @@
 .hero {
   position: relative;
   &__img {
-    height: 600px;
+    // heigh of image minus height of header
+    height: calc(600px - 89px);
 
     @media (min-width: 576px) {
-      height: 1024px;
+      height: calc(1024px - 230px);
     }
 
-    @media (min-width: 768px) {
-      height: 768px;
+    @media (min-width: 769px) {
+      height: calc(768px - 120px);
     }
 
-    @media (min-width: 1024px) {
-      height: 799px;
+    @media (min-width: 1025px) {
+      height: calc(799px - 120px);
     }
 
-    @media (min-width: 1440px) {
-      height: 1000px;
+    @media (min-width: 1441px) {
+      height: calc(1000px - 120px);
     }
 
     & img {
@@ -24,17 +25,20 @@
       top: -89px;
       left: -72px;
       z-index: -1;
-      height: 100%;
+      // heigh of image plus height of header
+      height: calc(100% + 89px);
 
       @media (min-width: 576px) {
         top: -229px;
         left: -108px;
+        height: calc(100% + 230px);
       }
 
-      @media (min-width: 768px) {
-        top: -119px;
+      @media (min-width: 769px) {
+        top: -120px;
         left: 50%;
         transform: translateX(-50%);
+        height: calc(100% + 120px);
       }
     }
   }
@@ -44,42 +48,38 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -115%);
+    transform: translate(-50%, -82%);
 
     @media (min-width: 576px) {
       width: 100%;
-      top: 30.7%;
+      top: 37.7%;
     }
 
-    @media (min-width: 768px) {
-      top: 38.7%;
+    @media (min-width: 769px) {
+      top: 43%;
     }
 
-    @media (min-width: 1440px) {
-      top: 41%;
+    @media (min-width: 1025px) {
+      top: 43.4%;
+    }
+
+    @media (min-width: 1441px) {
+      top: 44.5%;
     }
   }
 
   &__scroll {
     position: absolute;
-    bottom: 16.5%;
+    bottom: 2%;
     left: 50%;
     transform: translate(-50%, -50%);
 
     @media (min-width: 576px) {
-      bottom: 23%;
+      bottom: 1%;
     }
 
-    @media (min-width: 768px) {
-      bottom: 16.5%;
-    }
-
-    @media (min-width: 1024px) {
-      bottom: 16%;
-    }
-
-    @media (min-width: 1440px) {
-      bottom: 13%;
+    @media (min-width: 769px) {
+      bottom: 1.4%;
     }
   }
 
