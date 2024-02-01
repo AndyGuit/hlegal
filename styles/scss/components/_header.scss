@@ -39,7 +39,7 @@
 
     @media (hover: hover) {
       &:hover {
-        background-color: $grey-bg;
+        background-color: rgba(255, 255, 255, 0.2);
       }
     }
 
@@ -78,6 +78,19 @@
           height: 6px;
           border-radius: 50%;
           background-color: $grey-separator;
+        }
+      }
+    }
+  }
+
+  &__social {
+    & .bi {
+      cursor: pointer;
+      color: white;
+
+      @media (hover: hover) {
+        &:hover {
+          color: $accent;
         }
       }
     }

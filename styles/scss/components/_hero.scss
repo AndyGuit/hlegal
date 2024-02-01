@@ -86,9 +86,19 @@
   &__scroll-btn {
     width: 42px;
     height: 42px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     background: transparent;
+
+    @media (hover: hover) {
+      &:hover {
+        border-color: rgba(240, 20, 90, 0.5);
+
+        & span {
+          border-color: $accent;
+        }
+      }
+    }
 
     & span {
       display: block;

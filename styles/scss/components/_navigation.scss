@@ -30,9 +30,24 @@
 .nav-link {
   color: $active-regular;
 
+  &::after {
+    content: '';
+    display: block;
+    width: 0;
+    transition: width 0.2s ease-in-out;
+    border-bottom: 3px solid white;
+  }
+
+  &:focus {
+    color: white !important;
+  }
+
   @media (hover: hover) {
     &:hover {
-      color: $accent !important;
+      color: white !important;
+      &::after {
+        width: 100%;
+      }
     }
   }
 
