@@ -3,14 +3,39 @@
   &__img {
     height: 600px;
 
+    @media (min-width: 576px) {
+      height: 1024px;
+    }
+
+    @media (min-width: 768px) {
+      height: 768px;
+    }
+
+    @media (min-width: 1024px) {
+      height: 799px;
+    }
+
+    @media (min-width: 1440px) {
+      height: 1000px;
+    }
+
     & img {
       position: absolute;
       top: -89px;
       left: -72px;
       z-index: -1;
-      // // 42px is the size of scroll button
-      // height: calc(100% - 42px);
       height: 100%;
+
+      @media (min-width: 576px) {
+        top: -229px;
+        left: -108px;
+      }
+
+      @media (min-width: 768px) {
+        top: -119px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
   }
 
@@ -20,6 +45,19 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -115%);
+
+    @media (min-width: 576px) {
+      width: 100%;
+      top: 30.7%;
+    }
+
+    @media (min-width: 768px) {
+      top: 38.7%;
+    }
+
+    @media (min-width: 1440px) {
+      top: 41%;
+    }
   }
 
   &__scroll {
@@ -27,6 +65,22 @@
     bottom: 16.5%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media (min-width: 576px) {
+      bottom: 23%;
+    }
+
+    @media (min-width: 768px) {
+      bottom: 16.5%;
+    }
+
+    @media (min-width: 1024px) {
+      bottom: 16%;
+    }
+
+    @media (min-width: 1440px) {
+      bottom: 13%;
+    }
   }
 
   &__scroll-btn {
