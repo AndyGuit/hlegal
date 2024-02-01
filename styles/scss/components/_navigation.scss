@@ -3,8 +3,14 @@
     margin-top: 110px !important;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     margin-top: 0 !important;
+  }
+}
+
+.navbar-nav {
+  @media (min-width: 769px) {
+    justify-content: flex-end !important;
   }
 }
 
