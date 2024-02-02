@@ -19,6 +19,16 @@ a {
   text-decoration: none;
 }
 
+section {
+  margin-bottom: 30px !important;
+  padding: 0 30px !important;
+
+  @media (min-width: 576px) {
+    margin-bottom: 60px !important;
+    padding: 0 15px !important;
+  }
+}
+
 .bg-gradient-supersoft {
   background: $gradient-supersoft;
   position: relative;
