@@ -4,7 +4,7 @@ const tabsNavLinkEl = tabsNavEl.querySelectorAll('.nav-link');
 // scroll tab links on small screens
 tabsNavLinkEl.forEach((link, index) => {
   link.addEventListener('click', () => {
-    if (screen.width >= 992) return;
+    if (window.innerWidth >= 992) return;
 
     let computedWidth = 0;
 
@@ -13,6 +13,5 @@ tabsNavLinkEl.forEach((link, index) => {
     }
 
     tabsNavEl.style = `transform: translateX(-${computedWidth}px)`;
-    console.log('clicked: ', link);
   });
 });
