@@ -36,6 +36,12 @@ section {
   overflow: hidden;
 }
 
+.gradient-red-text {
+  background: $gradient-red-text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 15px;

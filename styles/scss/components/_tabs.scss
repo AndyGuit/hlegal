@@ -1,4 +1,14 @@
 .tabs {
+  margin-bottom: 8px !important;
+
+  @media (min-width: 576px) {
+    margin-bottom: 40px !important;
+  }
+
+  @media (min-width: 769px) {
+    margin-bottom: 30px !important;
+  }
+
   .nav-tabs {
     gap: 30px;
     border: none;
@@ -95,7 +105,7 @@
   }
 
   .tab-pane {
-    h2 {
+    h3 {
       font-size: 20px;
       margin-bottom: 30px;
 
