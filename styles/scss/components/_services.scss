@@ -1,36 +1,4 @@
 .services {
-  &__link {
-    position: relative;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 1px;
-    color: $active-regular;
-
-    &::after {
-      content: '';
-      display: block;
-      position: absolute;
-      right: -9px;
-      top: 50%;
-      transform: translateY(-50%) rotate(-45deg);
-      width: 6px;
-      height: 6px;
-      border-bottom: 2px solid $active-regular;
-      border-right: 2px solid $active-regular;
-    }
-
-    @media (hover: hover) {
-      &:hover {
-        color: $accent;
-
-        &::after {
-          border-color: $accent;
-        }
-      }
-    }
-  }
-
   &__heading {
     margin: 7px 0 30px;
     font-size: 30px;
