@@ -1,0 +1,17 @@
+.fake-shadow {
+  padding: 0 20px;
+
+  &__first,
+  &__second {
+    height: 10px;
+    border-radius: 0px 0px 12px 12px;
+  }
+
+  &__first {
+    background-color: #cacadb;
+  }
+  &__second {
+    margin: 0 20px;
+    background-color: #e7e7f2;
+  }
+}
