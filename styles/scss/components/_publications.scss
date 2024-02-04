@@ -1,0 +1,54 @@
+.publications {
+  background-color: $grey-bg;
+  padding: 30px !important;
+
+  .row {
+    gap: 30px;
+  }
+
+  &__card {
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+
+    @media (min-width: 576px) {
+      &.col-sm-6 {
+        width: calc(50% - 15px);
+      }
+    }
+
+    @media (min-width: 992px) {
+      &.col-lg-4 {
+        width: calc(33.33333333% - 20px);
+      }
+    }
+  }
+
+  &__card-content {
+    padding: 30px;
+
+    h4 {
+      margin-bottom: 15px;
+      font-weight: bold;
+      color: $active-regular;
+      font-size: 16px;
+      line-height: 1.22;
+    }
+
+    time {
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 1.22;
+      letter-spacing: 1px;
+      color: $grey-text;
+    }
+
+    div {
+      display: block;
+      height: 4px;
+      margin: 15px 0;
+      background-color: $grey-separator;
+    }
+  }
+}

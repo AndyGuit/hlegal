@@ -1,5 +1,6 @@
 .clients {
   padding: 0 !important;
+  margin-bottom: 0 !important;
 
   @media (min-width: 1500px) {
     padding: 0 100px !important;
@@ -10,6 +11,10 @@
     text-transform: uppercase;
     line-height: 1.22;
     letter-spacing: 1px;
+  }
+
+  .row {
+    --bs-gutter-x: 0 !important;
   }
 
   &__logo {
