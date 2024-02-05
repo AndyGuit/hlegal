@@ -15,3 +15,10 @@ tabsNavLinkEl.forEach((link, index) => {
     tabsNavEl.style = `transform: translateX(-${computedWidth}px)`;
   });
 });
+
+const heroScrollEl = document.querySelector('.hero__scroll');
+const tabsEl = document.querySelector('.tabs');
+
+heroScrollEl.addEventListener('click', () => {
+  tabsEl.scrollIntoView();
+});
