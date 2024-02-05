@@ -1,0 +1,98 @@
+.footer {
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 0 !important;
+  background-color: $grey-bg;
+
+  .separator {
+    height: 2px;
+    background-color: $grey-separator;
+    margin-bottom: 30px;
+  }
+
+  &__nav {
+    @media (min-width: 576px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__contact-row {
+    @media (min-width: 576px) {
+      gap: 26px;
+
+      & div:not(:last-child) {
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          right: -12px;
+          top: 50%;
+          transform: translateY(-50%);
+          display: block;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: $grey-separator;
+        }
+      }
+    }
+  }
+
+  &__contacts li {
+    margin-bottom: 10px;
+  }
+
+  &__street a {
+    font-size: 16px;
+    line-height: 1.22;
+    color: $main;
+  }
+
+  &__onmap {
+    margin-bottom: 12px !important;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.22;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    @media (min-width: 576px) {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  &__social i {
+    font-size: 38px !important;
+  }
+
+  &__phone a {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.22;
+    color: $main-alt;
+  }
+
+  &__email a {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.22;
+    color: $active-regular;
+  }
+
+  &__email {
+    margin-bottom: 30px !important;
+
+    @media (min-width: 576px) {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.22;
+    color: $grey-text;
+    margin-bottom: 0;
+  }
+}
